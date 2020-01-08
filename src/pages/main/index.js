@@ -26,11 +26,9 @@ export default class Main extends Component {
             <div className="product-list">
                 {this.state.products.map(product =>(
                     <article key={product.id}>
-                        <ul>
-                            <img src={product.owner.avatar_url} width="80"></img>
-                            <a target="_blank" href={product.html_url}>
-                                <strong>{product.name}</strong>
-                            </a>
+                        <ul id="ul">
+                            <img id="image-git" src={product.owner.avatar_url} width="80"></img>
+                            <a id="title-repo" target="_blank" href={product.html_url}>{product.name}</a>
                         </ul>
                     </article>
                 ))}
