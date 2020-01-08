@@ -22,16 +22,25 @@ export default class Main extends Component {
     
 
     render(){
+
+        const { products } = this.state;
+
         return (
             <div className="product-list">
-                {this.state.products.map(product =>(
+                {products.map(product =>(
                     <article key={product.id}>
-                        <ul id="ul">
-                            <img id="image-git" src={product.owner.avatar_url} width="80"></img>
-                            <a id="title-repo" target="_blank" href={product.html_url}>{product.name}</a>
+                        <ul>
+                            <img src={product.owner.avatar_url} width="65"></img>
+                            <strong>{product.name}</strong>
                         </ul>
+                        <p>{product.description}</p>
+                        <a target="_blank" href={product.html_url}>Acess this repository</a>
                     </article>
                 ))}
+                <div classname="actions">
+                    <button>Back</button>
+                    <button>Next</button>
+                </div>
             </div>
         )
     }

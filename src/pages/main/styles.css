@@ -2,13 +2,7 @@
     max-width: 500px;
     margin: 20px auto 0;
     margin-left: 33%;
-    
-}
 
-#ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .product-list article {
@@ -17,13 +11,48 @@
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
-    display: flex;
 }
 
-#title-repo {
+.product-list article ul {
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.product-list strong {
+    padding-left: 30px;
+}
+
+.product-list article p {
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px;
+    line-height: 24px;
+}
+
+.product-list article a {
+    height: 42px;
+    border-radius: 5px;
+    border: solid #da1000;
+    background: none;
+    margin-top: 10px;
+    color: #da1000;
     font-weight: bold;
-    padding: 30px;
-    display: table-row;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .0.2s;
+}
+
+.product-list a:hover {
+    background: #da1000;
+    color: #fff
+}
+
+.product-list .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
